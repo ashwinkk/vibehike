@@ -1,0 +1,13 @@
+Database:Have used mysql as database.
+name and password has to be configured while deploying. Additionally one has to specify the port and host of the mysql server when going into production mode.
+
+So the root of the website presents the screen to upload file and input the 2 urls.
+There is a check box to follow the user.
+On submitting the form a post request is sent to the server which takes the song url and opens up the player using the sound cloud api.
+Then there is a download button to download the uploaded file from the server. The file is stored along with the staic files inside a dynamically generated directory.The download starts only if the user had checked the follow button in the first page.
+
+Haven't done the file size checking and ajax download button.
+
+getsong is the app name which does all the fucnctions mentioned above. The app uses a single table which stores the files and the song url incase we need them for later use.
+
+Additionally, packages like six,soundcloud and python-mysql should be installed. Django base version 1.9 is used.

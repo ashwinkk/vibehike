@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing</title>
+</head>
+<body>
+	<form method="POST" action="." enctype="multipart/form-data">{% csrf_token %}
+		{{ form }}
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

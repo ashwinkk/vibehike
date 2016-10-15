@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Player</title>
+	
+</head>
+<body>
+	<div style="width:50%">
+		{{ player| safe }}
+	</div>
+	<button id="download"><a>Download</a></button>
+	<script type="text/javascript" src="{% static 'ajax.js' %}">
+// 		var object = document.getElementById('download');
+// object.onclick = function(){
+// 	handleClick();
+// }
+
+// function handleClick(){
+// 	xttp = new XMLHttpRequest();
+// 	if (xhttp.readyState == 4 && xhttp.status == 200) {
+//     	alert(xttp.responseText);
+//   	}
+// 	xttp.open("GET","localhost:8000/download/15/",true);
+// 	xttp.send();
+// }
+	</script>
+</body>
+</html>
